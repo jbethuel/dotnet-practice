@@ -22,11 +22,11 @@ jobs:
         with:
           dotnet-version: "7.0.x"
 
+      - name: Set Prerequisites
+        run: dotnet user-secrets set MongoDB:ConnectionString ${{ secrets.MONGODB_CONNECTION }}
+
       - name: Restore
         run: dotnet restore
-
-      - name: Set Prerequisites
-        run: dotnet user-secrets set MONGODB_CONNECTION ${{ secrets.MONGODB_CONNECTION }}
 
       - name: Build
         run: dotnet build --configuration Release --no-restore
