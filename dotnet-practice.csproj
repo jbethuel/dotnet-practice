@@ -1,10 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>dotnet_practice</RootNamespace>
+    <UserSecretsId>816b5c39-96e5-4223-9e08-a91a74034159</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
