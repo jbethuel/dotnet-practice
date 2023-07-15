@@ -1,8 +1,6 @@
-using dotnet_practice.Models;
 using dotnet_practice.Services;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.Configure<BookStoreDatabaseSettings>(builder.Configuration.GetSection("MongoDB"));
 builder.Services.AddControllers();
 builder.Services.AddSingleton<BooksService>();
 builder.Services.AddEndpointsApiExplorer();
