@@ -12,6 +12,7 @@ builder.Services.AddSwaggerGen(options =>
 });
 
 var app = builder.Build();
+app.MapGet("/greet", () => "Hello World!");
 app.UseSwagger();
 app.UseSwaggerUI();
 app.UseHttpsRedirection();
