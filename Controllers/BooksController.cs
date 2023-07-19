@@ -31,6 +31,17 @@ public class BooksController : ControllerBase
         return book;
     }
 
+    /// <summary>
+    /// Create a new book
+    /// </summary>
+    /// <remarks>
+    /// Sample request:
+    ///
+    ///     {
+    ///        "bookName": "Random Book Vol. 1"
+    ///     }
+    ///
+    /// </remarks>
     [HttpPost]
     public async Task<IActionResult> Post(Book newBook)
     {
